@@ -1,0 +1,74 @@
+<html>
+<body>
+  <!-- Vue работает с этим div-ом -->
+  <div id="app">
+  <h1>{{ quiz.title }}</h1>
+  <!-- Индекс используется для проверки текущего индекса вопроса -->
+  <div v-for="(question, index) in quiz.questions">
+    <!-- Скрыть все вопросы, показывать только один вопрос с текущим индексом -->
+    <div v-show="index === questionIndex">
+      <h2>{{ question.text }}</h2>
+      <ol>
+        <li v-for="answer in question.answers">
+          <label>
+            <button v-on:click="next(answer.score)"> {{answer.text}}</button>
+          </label>
+        </li>
+      </ol>
+      <!-- Кнопки навигации -->
+      <!-- Заметка: Кнопка "Предыдущий" должна быть скрыта для первого вопроса -->
+    </div>
+  </div>
+  <h1>{{ score }}</h1>
+</div>
+
+  <!-- Загружаем скрипт Vue -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js"></script>
+  <!-- После загрузки страницы инициализируем Vue -->
+    <script>
+    window.onload=function(){
+    // Создайте викторину с заголовком и двумя вопросами.
+    // Вопрос имеет один или несколько ответов и один или несколько ответов могут быть верными.
+      var quiz = {
+        title: 'Моя викторина',
+        questions: [
+          {
+            text: "Вопрос 1. ок?",
+            answers: [
+              {text: 'ок', score: 4}, 
+              {text: 'нет', score: 5}, 
+            ]
+          }, {
+            text: "Вопрос 2",
+            answers: [
+              {text: 'Правильный ответ', score: 0}, 
+              {text: 'Неправильный ответ', score: 5}, 
+            ]
+          } 
+        ]
+      };
+
+      new Vue({
+  el: '#app',
+  data: {
+    quiz: quiz,
+    // Хранит индекс текущего вопроса
+    questionIndex: 0,
+    score: 0
+  },
+  // Представление вызовет эти методы при клике
+  methods: {
+    // Перейти к следующему вопросу
+    next: function(score) {
+        this.score+=score
+      this.questionIndex++;
+    },
+    // Вернуться к предыдущему вопросу
+    prev: function() {
+      this.questionIndex--;
+    }
+  }
+});
+    }
+  </script>
+</body>

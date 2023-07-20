@@ -1,0 +1,15 @@
+﻿id,en,ru,tr,uz,fr,de,jp
+CLICK,click,клик,klik,bosing,cri,Ruf,クリック
+BACK,1000$\nchange background,1000$\nсменить фон,1000$\narka planı değiştir,1000$\nfonni o'zgartiring,1000$\nchanger l'arrière-plan,1000$\nhintergrund ändern,1000$\n背景を変更する
+GALLERY,character\ngallery,галерея\nперсонажей,karakter\ngalerisi,belgilar\ngalereyasi,galerie des\npersonnages,galerie der\nCharaktere,キャラクターギャラリー
+KNOCKOUT,Get a\ncharacter,Выбить\nперсонажа,Karakteri\nal,Belgini\noling,Obtenir un\npersonnage,Charakter\nerhalten,キャラクターを取得する
+SIMPLE,Usual,Обычный,Normal,Oddiy,Ordinaire,Gewöhnlich,いつものように
+RARE,Rare,Редкий,Nadir,Noyob,Rare,Selten,レア
+GET,Receive,Получить,Almak için,Oling,Recevoir,Bekommen,受け取る
+SET,Choose,Выбрать,Seçmek,Tanlang,Choisir,Wählen,選ぶ
+NOW,Selected,Активный,Seçme,Tanlangan,Sélectionné,Aktiviert,選択された
+DUBLICAT,You got a duplicate\n+3$/click,Вам выпал дубликат\n+3$/клик,Sana bir kopyası düştü\n+3$/klik,Siz dublikat oldingiz\n+3$/bosing,Tu as un double\n+3$/cri,Du hast ein Duplikat bekommen\n+3$/Ruf,あなたは重複を持っています\n+3$/click
+PRICE,Price - 1,Цена - 1,Fiyat - 1,Narxi - 1,Prix - 1,Preis - 1,価格 - 1
+UPDUBL,You got a duplicate\n+5$/click,Вам выпал дубликат\n+5$/клик,Sana bir kopyası düştü\n+5$/klik,Siz dublikat oldingiz\n+5$/bosing,Tu as un double\n+5$/cri,Du hast ein Duplikat bekommen\n+5$/Ruf,あなたは重複を持っています\n+5$/click
+VIDEO,+3$/click,+3$/клик,+3$/klik,+3$/bosing,+3$/cri,+3$/Ruf,+3$/クリック
+BUTTON,Get a character,Выбить персонажа,Karakteri al,Belgini oling,Obtenir un personnage,Charakter erhalten,キャラクターを取得する

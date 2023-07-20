@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/lofi.ogg-303d81d0b78689a345803b6d6184f9f7.oggstr"
+
+[deps]
+
+source_file="res://lofi.ogg"
+dest_files=[ "res://.import/lofi.ogg-303d81d0b78689a345803b6d6184f9f7.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
